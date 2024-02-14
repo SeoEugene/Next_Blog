@@ -1,0 +1,37 @@
+.homewrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .circle {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 1px solid #333;
+    }
+  }
+
+
+}

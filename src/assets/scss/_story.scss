@@ -1,0 +1,55 @@
+.storywrap {
+   width: 70vw;
+   height: 100%;
+   overflow: scroll;
+   overflow-y: auto;
+   overflow-x: hidden;
+   scrollbar-width: thin;
+   scrollbar-color: red #fdfdfd;
+   scroll-behavior: smooth;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 16px;
+   grid-auto-rows: minmax(auto, auto);
+   padding: 10px;
+
+   .story {
+      width: 100%;
+      border: 1px solid #333;
+      border-radius: 30px;
+      padding: 50px;
+      background-color: #fdfdfd;
+   }
+
+
+}
+
+.storywrap::-webkit-scrollbar {
+   width: 0;
+}
+
+.storywrap::-webkit-scrollbar-thumb {
+   background-color: red;
+}
+
+.storywrap::-webkit-scrollbar-button {
+   width: 0;
+}
+
+@media (max-width: 1200px) {
+   .storywrap {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 800px) {
+   .storywrap {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 600px) {
+   .storywrap {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
